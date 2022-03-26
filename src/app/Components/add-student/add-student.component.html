@@ -1,0 +1,7 @@
+<div class="container">
+    <form (ngSubmit)="addStudent(name.value, age.value)" class="d-flex flex-column justify-content-center align-items-center my-5 mx-auto w-25 text-center alert alert-primary">
+        <input type="text" placeholder="Name" class="form-control mb-2" #name>
+        <input type="text" placeholder="Age" class="form-control mb-3" #age>
+        <input type="submit" class="btn btn-secondary btn-lg" value="Add">
+    </form>
+</div>

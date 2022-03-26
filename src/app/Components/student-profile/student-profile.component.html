@@ -1,0 +1,23 @@
+<table class="table table-striped table-hover w-50 text-center mt-5 mx-auto border">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of Students">
+            <td>{{student.id}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.age}}</td>
+            <td><button class="btn btn-warning" routerLink="student/{{student.id}}/update">Update</button></td>
+            <td><button class="btn btn-danger" (click)="deleteStudent(student.id)">Delete</button></td>
+        </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+</table>
